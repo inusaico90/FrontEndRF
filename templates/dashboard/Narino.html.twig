@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+{% block head %}
+    <title>REDDHHFIC</title>
+    {{ parent() }}
+{% endblock %}
+{% block cabeza %}
+<body id="inner_page">
+{{ parent() }}
+{% endblock %}
+{% block cuerpo %}
+    {{ parent() }}
+    <!-- section -->
+    <section class="main_full inner_page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text_align_center">
+                    <div class="full heading_s1 center">
+                        <h2>TODO SOBRE NARIÑO</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    {{ parent() }}
+    <!-- section -->
+    <section class="layout_padding section" style="width: 82%">
+        <div class="container">
+            <div class="row">
+                {% for posts in posts %}
+                    <div class="col-md-4 text_align_center">
+                        <h3><a href="post/{{ posts.id }}/{{ posts.titulo }}">{{ posts.titulo }}</a></h3>
+                        <h6>{{ posts.fechapublicacion | date("d/m/Y") }}</h6>
+                        <p id="{{ posts.id }}" style="overflow-wrap: break-word; word-wrap: break-word;"></p>
+                        <button type="button" onclick="agregartxt{{ posts.id }}()">Ver Resumen</button>
+                        <a href="post/{{ posts.id }}/{{ posts.titulo }}">
+                            <button class="yellow_bt">Leer más</button>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+            <!--Paginación-->
+            <div class="row mx-0">
+                <div class="col-md-12 full center">
+                    {% if previous >=0 %}
+                        <button><a href="{{ path('Cauca',{ offset:previous}) }}" class="btn_pagging"><i
+                                        class="fa fa-long-arrow-left"></i>Anterior</a></button>
+                    {% endif %}
+                    {% if next < posts|length %}
+                        <button><a href="{{ path('Cauca',{ offset:next}) }}"
+                                   class="btn_pagging">Siguiente<i
+                                        class="fa fa-long-arrow-right"></i></a></button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+{% endblock %}
+
+{% block cierre %}
+    {{ parent() }}
+{% endblock %}
+{% block javascripts %}
+    {% for posts in posts %}
+        <script>
+            function agregartxt{{ posts.id }} () {
+                var texto = `{{ posts.contenido }}`;
+                let recortado = texto.slice(0, 1000) + "...";
+                var text = document.createTextNode(recortado);
+                document.getElementById("{{ posts.id }}").appendChild(text);
+            }
+        </script>
+    {% endfor %}
+    {{ parent() }}
+{% endblock %}

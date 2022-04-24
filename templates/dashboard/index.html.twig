@@ -1,0 +1,171 @@
+{% extends 'base.html.twig' %}
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block cabeza %}
+<body id="inner_page">
+{{ parent() }}
+{% endblock %}
+{% block cuerpo %}
+    <!-- Sección uno -->
+    <section class="main_full inner_page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text_align_center">
+                    <div class="full heading_s1 center">
+                        <h2>ACTUALIDAD</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ parent() }}
+
+    <section class="layout_padding section" style="width: 82%">
+        <div class="container text_align">
+            <div style="border-bottom: 1px inset; border-bottom-color: rgba(159,162,162,0.71); border-top: 5px inset;
+            border-top-color: #9a00eb">
+                <h1 style="color: #9a00eb; margin-bottom: 0%;">CAUCA</h1>
+            </div>
+
+            <div class="row" style="margin: 10%;border-bottom: 2px inset">
+                {% for Cauca in Cauca %}
+                    <div class="col-md-9" style="text-align: justify">
+                        <h3><a href="post/{{ Cauca.id }}/{{ Cauca.titulo }}"
+                               style="color: #0000cc">{{ Cauca.titulo }}</a></h3>
+                        <h6>{{ Cauca.fechapublicacion | date("d/m/Y") }}</h6>
+                    </div>
+                {% endfor %}
+                <a class="blue_bt" href="Cauca">LEER MÁS</a>
+            </div>
+
+            <div style="border-bottom: 1px inset; border-bottom-color: rgba(159,162,162,0.71); border-top: 5px inset;
+            border-top-color: #5af322">
+                <h1 style="color: #5af322">VALLE DEL CAUCA</h1>
+            </div>
+            <div class="row" style="margin: 10%;border-bottom: 2px inset">
+                {% for Valle in Valle %}
+                    <div class="col-md-9" style="text-align: justify">
+                        <h3><a href="post/{{ Valle.id }}/{{ Valle.titulo }}"
+                               style="color: #0000cc">{{ Valle.titulo }}</a></h3>
+                        <h6>{{ Valle.fechapublicacion | date("d/m/Y") }}</h6>
+                    </div>
+                {% endfor %}
+                <a class="blue_bt" href="Valle">LEER MÁS</a>
+            </div>
+
+            <div style="border-bottom: 1px inset; border-bottom-color: rgba(159,162,162,0.71); border-top: 5px inset;
+            border-top-color: #3551c6">
+                <h1 style="color: #3551c6">NARIÑO</h1>
+            </div>
+            <div class="row" style="margin: 10%;border-bottom: 2px inset">
+                {% for Narino in Narino %}
+                    <div class="col-md-9" style="text-align: justify">
+                        <h3><a href="post/{{ Narino.id }}/{{ Narino.titulo }}"
+                               style="color: #0000cc">{{ Narino.titulo }}</a></h3>
+                        <h6>{{ Narino.fechapublicacion | date("d/m/Y") }}</h6>
+                    </div>
+                {% endfor %}
+                <a class="blue_bt" href="Narino">LEER MÁS</a>
+            </div>
+
+            <div style="border-bottom: 1px inset; border-bottom-color: rgba(159,162,162,0.71); border-top: 5px inset;
+            border-top-color: #e40001">
+                <h1 style="color: #e40001">INFORMES ESPECIALES</h1>
+            </div>
+
+            <div class="row" style="margin: 10%;border-bottom: 2px inset">
+                {% for Cauca in Cauca %}
+                    <div class="col-md-9" style="text-align: justify">
+                        <h3><a href="post/{{ Cauca.id }}/{{ Cauca.titulo }}">{{ Cauca.titulo }}</a></h3>
+                        <h6>{{ Cauca.fechapublicacion | date("d/m/Y") }}</h6>
+                    </div>
+                {% endfor %}
+                <a class="blue_bt" href="Cauca">LEER MÁS</a>
+            </div>
+
+            <div style="border-bottom: 1px inset; border-top: 5px inset; border-top-color: #9a00eb;">
+                <h1 style="margin-bottom: 2%; color: #9a00eb">REGISTRO DE AGRESIONES DURANTE 2021</h1>
+                <div class="row" style="justify-content: center; align-items: center; border-top: 2px solid; border-bottom: 2px solid">
+                    <div class="col-md-4" style="border-right: 2px solid;border-left: 2px solid;">
+                        <div class="footer_link_heading">
+                            <h1>LÍDERES(AS) Y DEFENSORES DE DDHH</h1>
+                        </div>
+                        <div class="footer_menu">
+                            <p>Informe y listados 2021</p>
+                            <a class="blue_bt" href="/Defensa">Ver listado</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="footer_link_heading">
+                            <h1>MASACRES</h1>
+                        </div>
+                        <div class="footer_menu" style="">
+                            <p>Informe y listados 2021</p>
+                            <a class="blue_bt" href="/Masacre">Ver listado</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4" style="border-right: 2px solid;border-left: 2px solid;">
+                        <div class="footer_link_heading">
+                            <h1>FIRMANTES DEL ACUERDO DE PAZ</h1>
+                        </div>
+                        <div class="footer_menu">
+                            <p>Informe y listados 2021</p>
+                            <a class="blue_bt" href="/Exfarc">Ver listado</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start section
+    <section class="layout_padding section" style="width: 82%">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="full heading_s1 center">
+                            <h2>Contactenos</h2>
+                        </div>
+                        CONTACTENOS
+                        <div class="form_cont">
+                            <form method="post" enctype="text/plain" action="enviar">
+                                <fieldset>
+                                    <div class="field">
+                                        <input type="text" name="name" placeholder="Nombre" required="required">
+                                    </div>
+                                    <div class="field">
+                                        <input type="email" name="email" placeholder="Correo" required="required">
+                                    </div>
+                                    <div class="field">
+                                        <textarea name="mensaje" placeholder="Mensaje" required="required"></textarea>
+                                    </div>
+                                    <div class="field center">
+                                        <button type="submit">Enviar</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    end section -->
+
+{% endblock %}
+
+{% block cierre %}
+    {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+{% endblock %}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block title %} <title>Admin Red FIC </title> {% endblock %}
+    {% block stylesheets %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href={{ asset('asset/css/main.css') }} />
+        <link rel="icon" href="{{ asset('assets/images/favicon.png') }}" type="image/png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets/images/apple-touch-icon-120x120-precomposed.png') }}"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('assets/images/apple-touch-icon-152x152-precomposed.png')}}"/>
+
+    {% endblock %}
+</head>
+<body class="is-preload">
+{% block body %}
+    <!--Estructura general de todas las pantallas-->
+    <!-- Sidebar -->
+    <div id="sidebar">
+
+        <!-- Logo -->
+        <h1 id="logo"><a href="\control" style="align-items: center">
+                {% if app.user %}
+                    Hola {{ app.user }}
+                {% else %}
+                        <img src="{{ asset('assets/images/logo2.png') }}" id="logo" width="150" height="150">
+                        RedFIC
+                {% endif %}
+            </a>
+        </h1>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                {% if app.user %}
+                    <li><a href="{{ path('app_logout') }}" style="color: red">Cerrar Sesión</a></li>
+                    <li><a href="\posts">Crear Publicación</a></li>
+                    <li><a href="\posts/Masacres">Informes Masacre</a></li>
+                    <li><a href="\posts/Defensores">Informes Defensora de DDHH</a></li>
+                    <li><a href="\posts/Exfarc">Informes Firmantes de paz</a></li>
+                    <li><a href="\admin">Editar/Eliminar</a></li>
+                    {% else %}
+                        <li><a href="\">Regresar a la pagina principal</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+
+        <!-- Search
+        <section class="box search">
+            <form method="post" action="#">
+                <label>
+                    <input type="text" class="text" name="search" placeholder="Buscar" />
+                </label>
+            </form>
+        </section> -->
+
+        <!-- Recent Posts -->
+        <!-- Copyright -->
+        <ul id="copyright">
+            <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            <li>Implementado por <a href="mailto:erneyjj@hotmail.es?subject=RedFICs">Kevin Acosta</a></li>
+        </ul>
+
+    </div>
+
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('asset/js/jquery.min.js')}}"></script>
+    <script src="{{ asset('asset/js/browser.min.js')}}"></script>
+    <script src="{{ asset('asset/js/breakpoints.min.js')}}"></script>
+    <script src="{{ asset('asset/js/util.js')}}"></script>
+    <script src="{{ asset('asset/js/main.js')}}"></script>
+{% endblock %}
+</body>
+</html>

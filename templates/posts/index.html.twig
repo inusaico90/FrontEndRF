@@ -1,0 +1,34 @@
+{% extends 'admin.html.twig' %}
+{% block title %}{{ parent() }}{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/popup.css') }}" type="text/css"/>
+{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    <div id="content">
+        <div class="inner">
+            <div class="example-wrapper">
+                {% for mesagge in app.flashes('correcto') %}
+                    <div class="alert alert-success">
+                        <div id="popup" class="overlay">
+                            <div id="popupBody">
+                                <h2>FELICIDADES</h2>
+                                <a id="cerrar" href="">&times;</a>
+                                <div class="popupContent">
+                                    <p> {{ mesagge }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                {{ form(formulario) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}

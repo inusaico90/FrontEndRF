@@ -1,0 +1,1270 @@
+{% extends 'base.html.twig' %}
+{% block head %}
+    <title>REDDHHFIC</title>
+    {{ parent() }}
+{% endblock %}
+{% block cabeza %}
+<body id="inner_page">
+<style>
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+</style
+{{ parent() }}
+{% endblock %}
+{% block cuerpo %}
+    {{ parent() }}
+    <!-- section -->
+    <section class="main_full inner_page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text_align_center">
+                    <div class="full heading_s1 center">
+                        <h2>HERRAMIENTAS DE APOYO</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- section -->
+    <section class="layout_padding section" style="width: 82%">
+        <div class="container">
+            <div class="row" style="text-align: justify; margin: 1%">
+                <ul>
+                    <li>
+                        <a name="Menu"/>
+                        <h1 STYLE="text-align: center">MENÚ DE NAVEGACIÓN</h1>
+                        <!--Pares-->
+                        <div style="text-align: center">
+                            <div style="float: right; width: 50%">
+                                <p><a href="#Tutela">2) ACCIÓN DE TUTELA</a></p>
+                                <p><a href="#DPublica">4) DENUNCIA PÚBLICA</a></p>
+                                <p><a href="#IEspecial">6) INFORME ESPECIAL</a></p>
+                                <p><a href="#DerechoPeticion">8) DERECHO DE PETICIÓN</a></p>
+                                <p><a href="#MecBusquedaUrgente">10) MECANISMO DE BÚSQUEDA URGENTE</a></p>
+                            </div>
+                            <!--Impares-->
+                            <div style="width: 50%;">
+                                <p><a href="#Cumplimiento">1) ACCIÓN DE CUMPLIMIENTO</a></p>
+                                <p><a href="#AUrgente">3) ACCIÓN URGENTE</a></p>
+                                <p><a href="#CPrensa">5) COMUNICADO DE PRENSA</a></p>
+                                <p><a href="#ActPolGrup">7) ACCIONES POPULARES Y DE GRUPO</a></p>
+                                <p><a href="#Corpus">9) HABEAS CORPUS</a></p>
+                            </div>
+                        </div>
+                        <!-- Generico
+                        <p><a href="#"></a></p>
+                        -->
+                    </li>
+                    <li>
+                        <a name="Cumplimiento"/>
+                        <details open>
+                            <h1 style="text-align: center">
+                                <summary>ACCIÓN DE CUMPLIMIENTO</summary>
+                            </h1>
+
+                            <p>Mediante ella toda persona a quien afecte el incumplimiento de una norma con fuerza
+                                de ley
+                                (leyes, decretos extraordinarios, decretos legislativos) o acto administrativo puede
+                                reclamar ante la autoridad judicial su cumplimiento.</p>
+
+                            <p>Leyes: Expedidas por el congreso.
+                                Decretos extraordinarios: Expedidos por el Gobierno con autorización del congreso.
+                                Decretos legislativos: Expedidos por el Gobierno en estados de excepción.</p>
+
+                            <p>La acción de cumplimiento se solicita porque una ley o acto administrativo no esta
+                                siendo
+                                cumplido por la autoridad encargada de hacerlo.</p>
+
+                            <h3>Contenido de la acción de cumplimiento</h3>
+
+                            <p>• Nombre completo, identificación y domicilio del accionante.</p>
+                            <p>• Determinación de la ley, norma con fuerza de ley o copia del acto administrativo
+                                incumplido.</p>
+                            <p>• Narración de los hechos constitutivos de incumplimiento.</p>
+                            <p>• Determinación de la autoridad o particular incumplido (cuando este actué o deba
+                                actuar en
+                                ejercicio de funciones públicas).</p>
+                            <p>• Prueba de la renuencia a aceptar la petición de cumplimiento.</p>
+                            <p>• Solicitud y aporte pruebas.</p>
+                            <p>• Manifestación que se entiende prestada bajo juramento de no haber presentado otra
+                                solicitud
+                                respecto de los mismos hechos o derechos ante ninguna otra autoridad.</p>
+                            <p>• Direcciones para notificaciones, del accionante y de la autoridad incumplida.</p>
+                            <h3>¿Necesita abogado?</h3>
+                            <p>No, usted puede ejercitarla directamente.</p>
+                            <h3>¿Cuándo se solicita?</h3>
+                            <p>Solo se puede intentar cuando no exista otro medio de defensa judicial.</p>
+                            <p>Si usted se ve afectado por el incumplimiento de una ley o acto administrativo,
+                                reclame a la
+                                autoridad encargada  de su cumplimiento, si ella se ratifica en su incumplimiento o
+                                no
+                                contesta dentro de los 10 días siguientes, puede interponer acción verbal (sino sabe
+                                leer,
+                                ni escribir, es menor de edad o se encuentra en situación de extrema urgencia) o por
+                                escrito
+                                ante el tribunal contencioso administrativo de su domicilio para hacer efectivo el
+                                cumplimiento de la norma.</p>
+                            <h3>Ante quién se interpone</h3>
+                            <p>Ante el juez administrativo del domicilio del accionante. Mientras entran en
+                                funcionamiento
+                                los Jueces administrativos se adelanta ante el tribunal contencioso administrativo
+                                del
+                                departamento.</p>
+                            <h3>Término para decidir</h3>
+                            <p>El tribunal tiene 20 días para decidir, después de la admisión de la solicitud.</p>
+
+                            <h3>Término para cumplir la decisión</h3>
+                            <p>La autoridad o el particular tendrán 10 días para cumplir lo resuelto, a menos que el
+                                tribunal de un plazo mayor.</p>
+
+                            <h3>FORMATO DE ACCIÓN DE CUMPLIMIENTO</h3>
+
+                            <p>Ciudad y fecha.......</p>
+                            <p>Señor</p>
+                            <p>Juez administrativo de ..... (a)</p>
+                            <p>E. S. D.</p>
+                            <p>Ref.: Acción de cumplimiento</p>
+
+                            <p>(nombre del accionante)...., identificado como aparece al pie de mi firma,
+                                domiciliado y
+                                residente en ......(municipio), presento ante usted Acción de Cumplimiento contra
+                                ............... (b), quien ha incurrido en incumplimiento de lo dispuesto en .....
+                                (c), tal
+                                como se desprende de los siguientes:</p>
+
+                            <p>HECHOS(d)</p>
+                            <p>PRIMERO.- El día..........,se expidió .....(acto incumplido), que
+                                dispone................</p>
+
+                            <p>SEGUNDO.- ..............(autoridad incumplida) se ha negado ha hacer efectiva la
+                                disposición
+                                anterior</p>
+
+                            <p>TERCERO.- Mediante comunicación de fecha .........,me dirigí a ........(autoridad
+                                incumplida)
+                                solicitando el cumplimiento del acto descrito en el hecho primero, a lo cual
+                                respondió
+                                ratificándose en su decisión de no acceder a lo solicitado (e)</p>
+
+                            <p>PRETENSIÓN</p>
+                            <p>Sírvase señor Juez ordenar a la autoridad encargada, el cumplimiento de
+                                .........(acto
+                                incumplido)</p>
+
+                            <p>DERECHO</p>
+                            <p>Invoco como fundamento de derecho el artículo 189, ordinal 11 de la Constitución
+                                Política y
+                                la Ley 393 de 1997</p>
+
+                            <p>PRUEBAS</p>
+                            <p>Ténganse como pruebas las siguientes: (f)</p>
+                            <p>1. Copia autentica de ..............(acto incumplido)</p>
+                            <p>2. Copia de la comunicación en la que se solicito el cumplimiento del acto</p>
+                            <p>3. Oficio de respuesta de la autoridad incumplida que prueba la renuencia a cumplir
+                                el
+                                acto</p>
+                            <p>4. ....(otras pruebas)</p>
+
+                            <p>ANEXOS</p>
+                            <p>Acompaño a la presente acción, copias de la misma y los documentos aducidos como
+                                pruebas
+                                (g)</p>
+
+                            <p>NOTIFICACIONES</p>
+                            <p>A ................(autoridad incumplida).................en
+                                .................(dirección)</p>
+                            <p>Al suscrito en ...........................(dirección)</p>
+
+                            <p>Manifiesto a Usted señor juez, que no he interpuesto ninguna otra acción en relación
+                                con los
+                                mismos hechos y derechos expuestos ante otra autoridad (h).</p>
+
+                            <p>Del señor juez, atentamente,</p>
+
+                            <p>Accionante _______________________</p>
+                            <p>C.C (i)</p>
+
+                            <p>(a) Juez administrativo del lugar del domicilio del accionante. Si hay varios, deberá
+                                hacerse
+                                por reparto.</p>
+                            <p>Mientras entran en funcionamiento los Jueces administrativos se adelanta ante los
+                                tribunales
+                                administrativos.</p>
+                            <p>(b) autoridad pública o particular que ejerza funciones públicas y este incumpliendo
+                                una ley,
+                                acto administrativo, acto con fuerza de ley</p>
+                            <p>(c) identificación de la ley, acto con fuerza de ley (ordenanza, acuerdo, resolución)
+                                o acto
+                                administrativo (verbal o escrito) incumplido</p>
+                            <p>Excepto normas que establezcan gastos</p>
+                            <p>(d) Relato en orden cronológico de los hechos que constituyen el incumplimiento,
+                                identificando la autoridad pública o particular responsable
+                            <p>(e) Renuencia por parte de la autoridad: respuesta a la comunicación enviada o
+                                afirmación de
+                                no haberla obtenido dentro de los diez (10) días siguientes a su presentación.</p>
+                            <p>(f) Indicar las pruebas que se aportan y las que se solicita al juez que decrete</p>
+                            <p>si se demanda el cumplimiento de un ley se debe aportar como prueba, un ejemplar del
+                                diario
+                                oficial donde aparece publicada</p>
+                            <p>(g) Anexos.- se deben acompañar los documentos que se aportan como pruebas y copia de
+                                la
+                                acción para el archivo del juzgado y notificaciones</p>
+                            <p>(h) Manifestación, que se entiende prestada bajo juramento, de no haber interpuesto
+                                ninguna
+                                otra acción en relación con los mismos hechos y derechos expuestos ante otra
+                                autoridad.</p>
+                            <p>(i) Firma y número de la cédula de ciudadanía o tarjeta de identidad</p>
+                            <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                        </details>
+                    </li>
+                    <li>
+                        <a name="Tutela"/>
+                        <details open>
+                            <h1 style="text-align: center">ACCIÓN DE TUTELA</h1>
+                            <p>La acción de tutela es un mecanismo que tiene por objeto la protección de los derechos
+                                constitucionales fundamentales, aún aquellos que no se encuentren consagrados en la
+                                constitución, cuando estos resulten vulnerados o amenazados por la acción o la omisión
+                                de
+                                cualquier autoridad pública. El fallo que se produce de esta acción es de inmediato
+                                cumplimiento. Se encuentra consagrada en el Art. 86 CN y ha sido reglamentada por los
+                                decretos 2591 de 1991, 306 de 1992 y 1382 de 2000.</p>
+
+                            <h3>¿Cuándo Procede?</h3>
+                            <p>Cuando resulten vulnerados o amenazados los derechos constitucionales fundamentales, aun
+                                aquellos que no se encuentren textualmente consagrados en la constitución, pueden
+                                invocarse
+                                aduciendo una conexidad con los derechos fundamentales, por la acción u omisión de
+                                cualquier
+                                autoridad pública.</p>
+
+                            <p> Cuando no haya ningún otro medio que permita proteger el derecho. Aunque es procedente
+                                la
+                                tutela en aquellas circunstancias en las cuales se utilice como mecanismo transitorio
+                                para
+                                evitar un perjuicio irremediable, aun cuando existan otros medios de protección.</p>
+
+                            <p> Cuando por acción u omisión de un particular en el caso que éste preste un servicio
+                                público,
+                                o cumpla funciones públicas.</p>
+
+                            <p> Cuando el actor se encuentre en situación de indefensión o subordinación respecto del
+                                particular contra quien se interpone la acción de tutela.</p>
+
+                            <h3>¿Qué derechos protege la acción de tutela?:</h3>
+                            <p>La acción de tutela protege los derechos fundamentales. Algunos de éstos derechos
+                                fundamentales son la vida, la integridad personal, la igualdad, el reconocimiento de la
+                                personalidad jurídica, la libertad de conciencia, de religión, de expresión, de
+                                circulación,
+                                de escogencia de profesión u oficio, de enseñanza y aprendizaje y de investigación y de
+                                cátedra, los derechos a la honra y al buen nombre, al debido proceso, a la defensa y a
+                                elegir y a ser elegido. También son derechos fundamentales el derecho de petición (ya
+                                estudiado), de asociación y los derechos de los niños.</p>
+
+                            <h3>¿Cuál es el término que el juez tiene para resolver la solicitud de tutela?:</h3>
+                            <p>En ningún caso podrán transcurrir más de 10 días entre la solicitud de tutela y su
+                                resolución</p>
+
+                            <h3>¿Cómo se debe presentar la acción de tutela?:</h3>
+                            <p>La acción de tutela se puede presentar tanto de forma verbal como escrita. Puede
+                                presentarse
+                                en nombre propio o en nombre de la persona perjudicada. No es necesario recurrir a
+                                abogado
+                                para presentar la acción.</p>
+                            <p>La tutela puede presentarse verbalmente en los siguientes casos:</p>
+
+                            <p>• Cuando el solicitante no sabe escribir</p>
+                            <p>• Cuando sea menor de edad</p>
+                            <p>• Cuando exista urgencia de protección.</p>
+
+                            <h3>¿Ante quién se presenta la acción de tutela?:</h3>
+                            <p>La acción de tutela se puede interponer, en principio, ante cualquier juez que tenga
+                                jurisdicción en el lugar de los hechos que causan la amenaza o la vulneración del
+                                derecho.
+                                Sin embargo existen unas reglas de competencia establecidas por el Decreto 1382 de 2000,
+                                que
+                                durante algún tiempo fueron inaplicadas por la Corte Constitucio­nal, pero que ahora son
+                                de
+                                obligatorio cumplimiento.</p>
+
+                            <p>Dichas competencias se establecen de la siguiente manera: Las acciones de tutela que se
+                                interpongan contra cualquier autoridad pública del orden nacional, salvo lo dispuesto en
+                                el
+                                siguiente inciso, serán repartidas para su conocimiento, en primera instancia, a los
+                                tribunales superiores de distrito judicial/ administrativo y consejos seccionales de la
+                                judicatura.</p>
+
+                            <p>1. A los jueces de circuito o con categoría de tales, le serán repartidas para su
+                                conocimiento, en primera instancia, las acciones de tutela que se interpongan contra
+                                cualquier organismo o entidad del sector descentralizado por servicios del orden
+                                nacional o
+                                autoridad pública del orden departamental.</p>
+                            <p>2. A los jueces municipales les serán repartidas para su conocimiento en primera
+                                instancia,
+                                las acciones de tutela que se interpongan contra cualquier autoridad pública del orden
+                                distrital o municipal y contra particulares.</p>
+                            <p>3. Cuando la acción de tutela se promueva contra más de un funcionario o corporación
+                                judicial, le será repartida al respectivo superior funcional del accionado. Si se dirige
+                                contra la Fiscalía General de la Nación, se repartirá al superior funcional del juez al
+                                que
+                                esté adscrito el fiscal.</p>
+
+                            <h3>¿Quién puede interponer la acción?;</h3>
+                            <p>La persona que considere que sus derechos fundamentales se encuentren vulnerados o
+                                amenazados
+                                y/o por intermedio de apoderado judicial, el defensor del pueblo y el personero.</p>
+
+                            <h3>FORMATO ACCIÓN DE TUTELA</h3>
+
+                            <p>Honorable</p>
+                            <p>JUEZ ________ (reparto) de</p>
+                            <p>E. S. D.</p>
+
+                            <p>Referencia: Acción de Tutela</p>
+                            <p>Accionante:__(Quien(es) son los afectados)</p>
+                            <p>Accionado: __(Quien infringe o es responsable por la violación)</p>
+
+                            <p>________________, mayor de edad e identificado como aparece al pie de mi firma, haciendo
+                                uso
+                                de las facultades que me confiere el artículo 86 de la Carta Política, de la manera más
+                                atenta y respetuosa me dirijo a usted con el fin de manifestarle que por medio del
+                                presente
+                                escrito INSTAURO ACCIÓN DE TUTELA contra el ____________ (institución), señor
+                                ___________ ,
+                                con el fin de que se me proteja y tutele mi derecho constitucional fundamental de
+                                petición</p>
+
+                            <p>Derecho fundamental a tutelar</p>
+                            <p>Artículo, consagrado en nuestra Constitución Política.</p>
+
+                            <p>Es menester recalcar que este derecho constitucional fundamental se encuentra vulnerado
+                                por
+                                parte de ____________ , en cabeza del señor ___________ En razón de ello solicito a este
+                                Honorable despacho se sirva tutelar la protección a mi derecho fundamental violado, de
+                                acuerdo con lo que a continuación refiero:</p>
+
+                            <p>Hechos</p>
+
+                            <p>Primero:</p>
+
+                            <p>Derechos violados</p>
+
+                            <p>Es menester recalcar que este derecho constitucional fundamental se encuentra vulnerado
+                                por
+                                parte de ____________ , en cabeza del señor ___________ En razón de ello solicito a este
+                                Honorable despacho se sirva tutelar la protección a mi derecho fundamental violado, de
+                                acuerdo con lo que a continuación refiero:</p>
+
+                            <p>Procedencia de la acción</p>
+
+                            <p>La presente acción es procedente porque a la fecha la ___________ autoridad ___________
+                                en
+                                cabeza de _________________no ha absuelto la solicitud que respetuosamente interpuse
+                                ante su
+                                despacho seis (6) meses y veinte (20) días atrás, además de no existir otro mecanismo de
+                                protección a mi Derecho Fundamental violado.</p>
+
+                            <p>Petición</p>
+
+                            <p>Se me garantice mi derecho fundamental de petición consagrado en el artículo 23 de la
+                                Constitución Política de Colombia.</p>
+
+                            <p>Declaración</p>
+                            <p>Con el fin de tutelar y proteger mi inherente derecho constitucional fundamental
+                                vulnerado,
+                                el honorable despacho hace las siguientes declaraciones:</p>
+
+                            <p>Tutelar el Derecho Fundamental _________ vulnerado a ___________ accionante ___________
+                                por
+                                parte de ____________ y en consecuencia, ordenar a dicho funcio­nario que resuelva la
+                                Petición formulada el ___________ dando respuesta concreta a todas y cada una de las
+                                preguntas formuladas en dicho escrito.</p>
+
+                            <p>Fundamento de la acción</p>
+                            <p>Fundamento la presente acción en el artículo 86 de la constitución Política, decreto2591
+                                de
+                                1991, decreto 1382 de2000.</p>
+
+                            <p>Juramento</p>
+                            <p>Bajo la gravedad de juramento, aseguro que no he interpuesto otra Acción de Tutela por
+                                los
+                                mismos hechos y pretensiones.</p>
+
+                            <p>Pruebas</p>
+                            <p>Solicito se tengan en cuenta los siguientes medios probatorios:</p>
+
+                            <p>Pruebas documentales</p>
+
+                            <p>Anexos</p>
+                            <p>Con el propósito de sustentar esta acción, me permito anexar los documentos anunciados en
+                                el
+                                acápite correspondiente a los medios probatorios documentales.</p>
+
+                            <p>Notificaciones</p>
+                            <p>Cualquier notificación me puede ser enviada a la __________ Teléfonos ____________, en la
+                                ciudad de _________________
+
+                            <p>Atentamente,</p>
+                            <p>____________________</p>
+                            <p>C.C. No.</p>
+                            <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                        </details>
+                    </li>
+                    <li>
+                        <a name="AUrgente"/>
+                        <details open>
+                            <h1 style="text-align: center">ACCIÓN URGENTE</h1>
+                            <p>Es una herramienta a la que recurre una o más personas u organizaciones para dar a
+                                conocer a
+                                la opinión pública nacional e internacional, al igual que a las autoridades
+                                gubernamentales
+                                e intergubernamentales competentes, y medios de Comunicación nacionales e
+                                internacionales,
+                                situaciones violatorias a los derechos humanos y/o al Derecho Internacional humanitario,
+                                con
+                                el fin de obtener acciones inmediatas frente a las solicitudes y/o exigencias realizadas
+                                en
+                                dicha acción.</p>
+
+                            <p>Se caracteriza porque los hechos materia de la acción pueden ser PREVENIDOS O
+                                CONTRARRESTADOS
+                                (amenazas, hostigamientos, desapariciones forzadas, retenciones etc.) por la acción
+                                inmediata de organizaciones de carácter nacional e internacional (Organizaciones de
+                                Derechos
+                                Humanos, Cuerpos diplomáticos y otros Estados) y la presión que se logre realizar a
+                                través
+                                del envió de oficios o interlocuciones verbales que contengan solicitudes o exigencias
+                                dirigidas al Estado Colombiano. Al igual que puede llegar a aportar en el proceso de
+                                acción
+                                judicial por violaciones al DIDH e infracciones al DIH.</p>
+
+                            <p>Se realiza de forma inmediata sobre hechos pasados y presentes, cuando, se tiene la
+                                información precisa y necesaria sobre hechos que constituyen riesgos o se han presentado
+                                violaciones al DIDH e infracciones al DIH.</p>
+
+                            <h3>¿Cuáles son los elementos de una acción urgente?</h3>
+                            <p>Los elementos básicos a la hora de realizar la ACCIÓN URGENTE son:</p>
+
+                            <p>• ENCABEZADO: URGENTE – A LA COMUNIDAD NACIONAL E INTERNACIONAL – NOMBRE DE LA
+                                ORGANIZACIÓN:
+                                Debe contener el nombre de la organización u organizaciones que proyectan la ACCION
+                                URGENTE.</p>
+                            <p>• TÍTULO: ACCION URGENTE: Permite la fácil divulgación de la información.</p>
+                            <p>• REFERENCIA CONSECUTIVA: Con el fin de llevar un orden de expedición de las acciones
+                                urgentes, que a su vez permita que las autoridades den respuesta señalando dicha
+                                referencia.</p>
+                            <p>• INTRODUCCIÓN: Contiene un breve resumen de la situación que se va a describir:</p>
+                            <p>• HECHOS: Se deber realizar una descripción pormenorizada de la situación, haciendo
+                                énfasis
+                                en:</p>
+
+                            <p>a. Datos sobre el hecho:</p>
+
+                            <p>Ubicación Temporal: El día, mes y año en que ocurre el hecho; y la hora exacta o
+                                aproximada
+                                en que ocurre el hecho</p>
+
+                            <p>Ubicación geográfica:</p>
+                            <p>Departamento y Municipio en que ocurre el hecho</p>
+                            <p>Dependiendo si el hecho ocurre en el sector urbano: Comuna, Zona, Barrio o sector; en el
+                                sector rural: Corregimiento y Vereda.</p>
+
+                            <p>Tipos de Agresión frecuentes:</p>
+                            <p>Entre las modalidad(es) de crímenes de Estado, más frecuentes de que pueden ser víctimas
+                                individuos o comunidades, se destacan: Ejecución extrajudicial, Desaparición forzada,
+                                desplazamiento forzado, Torturas o tratos crueles, Masacre, Allanamiento, Amenaza,
+                                Atentado,
+                                hostigamientos, seguimientos, señalamientos, agresiones físicas, Detención Arbitraria o
+                                ilegal y Detención Masiva.</p>
+
+                            <p>Medios utilizados para agresión</p>
+                            <p>Armas de de fuego, largas o cortas y otros detalles; Gases; Armas blancas: Machete,
+                                cuchillos; otras armas: Explosivos, palos, agresión verbal (insultos), escrita,
+                                otros.</p>
+
+                            <p>Logística utilizada en la agresión</p>
+                            <p>Carro, lancha, avión, helicóptero, otros.</p>
+
+                            <p>b. Datos sobre las víctimas:</p>
+
+                            <p>Nombres y apellidos</p>
+                            <p>Sexo: Masculino o Femenino</p>
+                            <p>Edad: exacta o aproximada de la victima</p>
+                            <p>Sector social al que pertenece o pertenecía: Campesino, Indígena, afro descendiente,
+                                Comerciante, Empleado, Estudiante, Obrero u otros.</p>
+                            <p>Organización social o popular a la que pertenece: Campesina, Cívica, Comunal,
+                                Estudiantil,
+                                Indígena, Juvenil, afro descendientes, Sindical, viviendistas y otros.</p>
+
+                            <p>c. Datos sobre el (los) autor (es) del hecho (s):</p>
+
+                            <p>Nombres y apellidos</p>
+                            <p>Número y Sexo de Personas que participaron del hecho (Masculino o Femenino)</p>
+                            <p>Edades exacta (s) o aproximada (s) de los victimarios</p>
+                            <p>Órgano o fuerza Estatal comprometida: Ejército, Armada, Naval, Fuerza Aérea, Policía,
+                                DAS,
+                                CTI o Paramilitares</p>
+                            <p>Estructura a la que pertenece(n) los victimarios:</p>
+                            <p>Militar, policial y paramilitar.</p>
+
+                            <p>• ESTABLECIMIENTO DE RESPONSABILIDAD y EXIGENCIAS: dirigidas al Estado y las
+                                instituciones
+                                encargadas de promover y prevenir el DIDH. En este sentido hay que ser lo bastantemente
+                                claros, ya que estas serán las pautas para el respaldo que realicen las demás
+                                organizaciones
+                                frente a las autoridades estatales. Estas varían de acuerdo con el caso.</p>
+                            <p>• SOLICITUDES: Dirigidas a organizaciones sociales o populares nacionales e
+                                internacionales y
+                                a organismos intergubernamentales de prevención y promoción del DIDH.</p>
+                            <p>• DIRECCIONES: Se recomienda tener en cuenta la notificación primordial de las siguientes
+                                autoridades (Presidencia de la República, Vicepresidente de la República, Ministerio de
+                                Defensa, Ministerio del Interior y Justicia, Procuraduría General de la Nación, Fiscalía
+                                General de la Nación, Programa Presidencial de Derechos Humanos y de Derecho
+                                Internacional
+                                Humanitario, Unidad de Derechos Humanos y de Derecho Internacional Humanitario de la
+                                Fiscalía General de la Nación). Se debe anexar la dirección para remitir la
+                                correspondencia
+                                escrita, números telefónicos, números de fax, dirección de correo electrónico. Esto
+                                permite
+                                que se pueda solicitar a través de cualquier medio las aclaraciones pertinentes y la
+                                formulación de un llamamiento al Gobierno a fin de que adopten las medidas necesarias
+                                para
+                                garantizar los derechos de la(s) presunta(s) víctima(s).</p>
+                            <p>• FECHA: De emisión de la denuncia</p>
+                            <p>• FIRMA: De la organización que proyecta la ACCION URGENTE.</p>
+
+                            <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                        </details>
+                    </li>
+                    <li>
+                        <a name="DPublica"/>
+                        <details open>
+                            <h1 style="text-align: center">DENUNCIA PÚBLICA</h1>
+                            <p>Es una herramienta a la que recurre una o más personas u organizaciones para dar a
+                                conocer a
+                                la opinión pública nacional e internacional, al igual que a las autoridades
+                                gubernamentales
+                                e intergubernamentales competentes, y medios de Comunicación nacionales e
+                                internacionales,
+                                situaciones violatorias a los derechos humanos y/o al Derecho Internacional humanitario,
+                                con
+                                el fin de que se esclarezcan dichas situaciones y se adelanten las investigaciones
+                                correspondientes para dar con el paradero y/o sancionar a los responsables.</p>
+
+                            <p>Se caracteriza porque los hechos materia de la constancia YA HAN TENIDO OCURRENCIA
+                                (homicidios, masacres, desplazamientos, torturas, violencia sexual, bombardeos,
+                                amenazas,
+                                hostigamientos, desapariciones forzadas, retenciones etc.).</p>
+
+                            <p>Es un documento que se emite en el periodo en que se reciba la información precisa y
+                                necesaria sobre hechos pasados y/o presentes que constituyen violaciones al DIDH. Su
+                                objetivo es aportar al proceso de suspensión y/o acción judicial frente a violaciones al
+                                DIDH.</p>
+
+                            <p>Los elementos son los similares a la Acción urgente, variando en el titulo, las
+                                solicitudes y
+                                exigencias.</p>
+
+                            <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                        </details>
+                    </li>
+                    <li>
+                        <a name="CPrensa"/>
+                        <details open>
+                            <h1 style="text-align: center">COMUNICADOS DE PRENSA</h1>
+                            <p>Es un pronunciamiento frente a un hecho determinado en donde la organización plasma su
+                                posición frente al mismo. Por ejemplo: (la posición frente a legislación que tenga
+                                relación
+                                con el sistema judicial nacional e internacional y con el DIDH, la emisión de informes
+                                de
+                                organismos inter gubernamentales, hechos relevantes en materia de DIDH etc.)</p>
+
+                            <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                        </details>
+                    </li>
+                    <li>
+                        <a name="IEspecial"/>
+                        <details open>
+                            <h1 style="text-align: center">INFORME ESPECIAL</h1>
+                            <p>Es una recopilación cronológica de acciones violatorias al DIDH y al DIH recurrentes
+                                desarrolladas en un territorio especifico y/o en contra de un sector social en
+                                determinado
+                                periodo de tiempo.</p>
+
+                            <p>Además de los elementos generales de la acción Urgente y/o constancia Histórica, se debe
+                                agregar las acciones jurídicas y políticas realizadas por la organización. Señalando de
+                                esta
+                                forma la omisión del Estado en prevenir o detener situaciones violatorias del DIDH.</p>
+                            <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                        </details>
+                    </li>
+                    <li>
+                        <a name="ActPolGrup"/>
+                        <details open>
+                            <h1 style="text-align: center">ACCIONES POPULARES Y DE GRUPO <br>(LEY 472 DE 1998)</h1>
+                            <h3>¿Qué son las acciones populares?</h3>
+
+                            <p>Son acciones que se interponen con el objeto de exigir la protección de los derechos e
+                                intereses
+                                colectivos y están reguladas por el artículo 88 de la Constitución Nacional.</p>
+
+                            <p>Sirven para evitar un daño, hacer cesar el peligro y restituías cosas a su estado
+                                anterior,
+                                cuando éste daño o peligro sean ocasionados por acciones u omisiones de autoridades
+                                públicas
+                                o
+                                de particulares que hayan violado o amenazado violar los derechos o intereses
+                                colectivos.</p>
+
+                            <h3>¿Qué derechos se protegen?</h3>
+
+                            <p>El patrimonio, el espacio, la seguridad y la salubridad pública, la moral administrativa
+                                el
+                                ambiente sano, libre competencia económica y otros de similar naturaleza que se definen
+                                en
+                                ella.</p>
+
+                            <p>También regulara las acciones originadas en los daños ocasionados a un número plural de
+                                personas, sin perjuicio de las correspondientes acciones particulares.</p>
+
+                            <h3>¿Quien la interpone?</h3>
+
+                            <p>Cualquier persona natural o jurídica organizaciones no gubernamentales; populares,
+                                cívicas o
+                                de
+                                índole similar; entidades públicas que cumplan funciones de control, intervención o
+                                vigilancia,
+                                siempre que la amenaza o vulneración de derechos se haya originado en su acción u
+                                omisión;
+                                el
+                                Procurador General de la Nación, el Defensor del Pueblo y las Personerías; los alcaldes
+                                y
+                                demás
+                                servidores públicos que por razón de sus funciones deban promover la protección y
+                                defensa de
+                                estos derechos e intereses.</p>
+
+                            <h3>¿Ante quién se interpone?</h3>
+
+                            <p>Se interpone ante los jueces administrativos en primera instancia, cuando las acciones
+                                sean
+                                motivadas por actos u omisiones de entidades públicas o personas privadas que desempeñen
+                                funciones administrativas.</p>
+
+                            <p>Ante los jueces del circuito cuando las acciones se originen en actos u omisiones de los
+                                particulares y cuyo conocimiento no corresponda a la jurisdicción contenciosa
+                                administrativa.</p>
+
+                            <p>La segunda instancia corresponderá a la sección primera del Tribunal Contencioso
+                                administrativo
+                                y a la Sala civil del tribunal de distrito judicial, respectivamente.</p>
+
+                            <p>Donde no exista juez del circuito o contencioso podrá presentarse ante cualquier juez
+                                civil
+                                municipal o promiscuo.</p>
+
+                            <p>Los tribunales contencioso administrativos y el consejo de Estado conocerán estás
+                                acciones
+                                mientras entran en funcionamiento los jueces administrativos, y será competente el juez
+                                del
+                                lugar en donde ocurrieron los hechos o el del domicilio del demandado a elección del
+                                actor
+                                popular.</p>
+
+                            <h3>¿Contra quién se interpone?</h3>
+
+                            <p>Contra cualquier autoridad pública o particular que por sus acciones u omisiones lesionen
+                                o
+                                amenacen un derecho colectivo.</p>
+
+                            <h3>¿Cuál debe ser el contenido de la demanda?</h3>
+                            <p>1. Nombre e identificación del accionante.</p>
+                            <p>2. Indicación del derecho o interés colectivo amenazado o vulnerado.</p>
+                            <p>3. Narración de los hechos que motivan la acción.</p>
+                            <p>4. De ser posible la indicación de la persona natural o jurídica o autoridad pública
+                                presuntamente responsable de la amenaza o del agravio.</p>
+                            <p>5. Pretensiones.</p>
+                            <p>6. Dirección de notificación.</p>
+
+                            <h3>¿En qué tiempo puede ejercitarse?</h3>
+
+                            <p>En todo tiempo, incluso 'durante los estados de excepción y serán tramitadas con
+                                preferencia
+                                a
+                                las demás acciones que conozca el juez, salvo las acciones de tutela, de cumplimiento y
+                                el
+                                recurso de habeas corpus.</p>
+
+                            <h3>¿Qué es la acción de grupo?</h3>
+
+                            <p>Es una judicial para reclamar la reparación del daño, causado a un derecho o interés
+                                colectivo o
+                                a un derecho de cada uno de los miembros de un grupo social, siempre y cuando el daño
+                                ocasionado
+                                sea para todos o por una misma causa. Esta acción igual que la de grupo, protege los
+                                derechos
+                                colectivos.</p>
+
+                            <h3>Quiénes pueden ejercer la acción de grupo</h3>
+
+                            <p>Este mecanismo debe ser ejercido por un número mínimo de 20 personas (naturales o
+                                jurídicas),
+                                que hayan sufrido un perjuicio individual por una misma causa, frente a las cuales se
+                                dan
+                                todos
+                                los elementos configurativos de la responsabilidad. Esta acción se ejerce por intermedio
+                                de
+                                abogado, sin embargo el defensor del pueblo y los personeros también pueden instaurarla
+                                en
+                                nombre de cualquier persona que lo solicite o se encuentre en situación de desamparo o
+                                indefensión.</p>
+
+                            <h3>¿En qué tiempo pueden ejercitarse y quiénes conocen?</h3>
+
+                            <p>Esta acción puede ejercerse dentro de los dos años siguientes a la ocurrencia del hecho
+                                que
+                                causo el daño o a la cesación del la conducta perjudicial y es la jurisdicción
+                                contenciosos
+                                administrativa la que conoce de los asuntos en que el daño se derive de la actividad de
+                                entidades públicas o particulares con funciones administrativas, pero en los demás casos
+                                conocerá la jurisdicción ordinaria.</p>
+                            <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                        </details>
+                    </li>
+                    <li>
+                        <a name="DerechoPeticion"/>
+                        <details open>
+                            <h1 style="text-align: center">DERECHO DE PETICIÓN</h1>
+                            <H3>¿Qué es el Derecho de Petición?</H3>
+                            <p>El derecho de petición es la facultad que toda persona tiene para presentar solicitudes
+                                ante
+                                las autoridades o ante ciertos particulares y obtener de ellos una pronta solución sobre
+                                lo
+                                solicitado.</p>
+                            <p>Es un derecho fundamental, consagrado en el 23 de la Constitución Política, el artículo
+                                13 y
+                                ss. del Código de Procedimiento Administrativo y de lo Contencioso Administrativo, la
+                                Ley
+                                1775 de 2015 y es un deber de obligatorio cumplimiento para la administración pública.
+                                El
+                                Derecho de Petición puede ejercerse en interés, general o particular u obrando en
+                                cumplimiento de una obligación o deber legal. También, puede tratarse del Derecho de
+                                Petición de Informaciones y del Derecho de Formulación de Consultas.</p>
+
+                            <h3>¿Qué es una petición?</h3>
+                            <p>Una petición es la solicitud verbal o escrita que se presenta en forma respetuosa ante un
+                                servidor público o ante ciertos particulares con el fin de requerir su intervención en
+                                su
+                                asunto concreto.</p>
+
+                            <h3>¿Quiénes tienen derecho a presentar peticiones?</h3>
+                            <p>Cualquier persona lo puede presentar: todo ser humano independientemente de las
+                                condiciones
+                                de
+                                sexo, edad, nacionalidad, estado civil, etc.</p>
+
+                            <p>En Colombia tienen derecho a presentar peticiones todas las personas, sean nacionales o
+                                extranjeras, adultas o menores de edad, letradas o analfabetas.</p>
+
+                            <p>Sin embargo, a los militares y policias está prohibido constitucionalmente formular como
+                                tales,
+                                ante las autoridades de la fuerza pública, peticiones que no se relacionen con el
+                                servicio y
+                                la
+                                moralidad del cuerpo respectivo. Lo anterior no impide a militares y policías ejercer
+                                libremente
+                                el derecho de petición en otros ámbitos y materias, pues todos ellos son titulares de
+                                ese
+                                derecho fundamental.</p>
+
+                            <h3>¿Ante quién se puede ejercer el derecho de petición?</h3>
+                            <p>El derecho de petición se puede ejercer ante:</p>
+                            <p>• Las autoridades</p>
+                            <p>• Los particulares que presten un servicio público o actúen o deban actuar en desarrollo
+                                de
+                                funciones públicas.</p>
+                            <p>• El legislador podrá reglamentar el ejercicio del derecho de petición ante las
+                                organizaciones
+                                privadas para garantizar los derechos fundamentales.</p>
+
+                            <h3>¿Con que finalidad pueden presentarse las peticiones ante las autoridades?</h3>
+                            <p>Las peticiones pueden presentarse:</p>
+                            <p>• Para que por motivos de interés general o particular se inicie por las autoridades una
+                                actuación administrativa.</p>
+                            <p>• Para que por motivos de interés general o particular las autoridades permitan el acceso
+                                a
+                                la
+                                información sobre las acciones por ellas desarrolladas.</p>
+                            <p>• Para que por motivos de interés general o particular las autoridades permitan conocer
+                                documentos no reservados u obtener copias de los mismos.</p>
+                            <p>• Para que por motivos de interés general o particular se den por las autoridades
+                                dictámenes
+                                o
+                                conceptos sobre asuntos de su competencia.</p>
+
+                            <h3>¿Hay límites al acceso de documentos públicos?</h3>
+                            <p>Sí. El derecho de acceso a documentos públicos puede ampararse bajo reserva en los casos
+                                que
+                                establezca la Ley. Los funcionarios públicos están autorizados para no permitir el
+                                acceso a
+                                aquellos documentos que sean reservados.</p>
+
+                            <p>El carácter reservado de un documento no será oponible a las autoridades que lo soliciten
+                                en
+                                el
+                                debido ejercicio de sus funciones; sin embargo, les corresponde a dichas autoridades
+                                asegurar su
+                                reserva.</p>
+
+                            <h3>¿Qué deben contener las peticiones escritas en interés general?</h3>
+                            <p>Las peticiones escritas deberán contener, por lo menos:
+                            <p>• La designación de la autoridad a la que se dirige.</p>
+                            <p>• Los nombres y apellidos completos del solicitante y de su representante o apoderado, si
+                                es
+                                el
+                                caso, con indicación de los documentos de identidad y sus direcciones.</p>
+                            <p>• El objeto de la petición.</p>
+                            <p>• Las razones en que se apoya.</p>
+                            <p>• La relación de documentos que se acompañan.</p>
+                            <p>• La firma del peticionario, cuando fuere el caso.</p>
+
+                            <h3>¿Se pueden exigir requisitos especiales para dar trámite a algunas peticiones?</h3>
+
+                            <p>Sí. Conforme a la ley, las autoridades pueden exigir algunos requisitos especiales como
+                                por
+                                ejemplo que ciertas peticiones se presenten por escrito, que se acrediten algunos
+                                requisitos
+                                para iniciar o adelantar actuaciones administrativas, en cuyo caso la relación de todos
+                                estos
+                                deberá fijarse en un lugar de la entidad, visible al público, etc.</p>
+
+                            <p>Sin embargo, la Constitución Política establece que cuando un derecho o una actividad
+                                hayan
+                                sido
+                                reglamentados de manera general, las autoridades públicas no podrán establecer ni exigir
+                                permisos, licencias o requisitos adicionales para su servicio.</p>
+
+                            <p>Las constancias, certificaciones o documentos que los servidores o autoridades tengan, o
+                                que
+                                puedan conseguir, en los archivos de la respectiva entidad, no serán exigidos a los
+                                particulares.</p>
+
+                            <h3>¿Qué nombres reciben los diferentes tipos de peticiones?</h3>
+                            <p>Las peticiones se denominan:</p>
+                            <p>QUEJAS, cuando ponen en conocimiento de las autoridades conductas irregulares de
+                                empleados
+                                oficiales o particulares a quienes se ha atribuido o adjudicado la prestación de un
+                                servicio
+                                público.</p>
+                            <p>RECLAMOS, cuando se da a las autoridades noticia de la suspensión injustificada o de la
+                                prestación deficiente de un servicio público.</p>
+                            <p>MANIFESTACIONES, cuando hacen llegar a las autoridades la opinión del peticionario sobre
+                                una
+                                materia sometida a actuación administrativa.</p>
+                            <p>PETICIONES DE INFORMACIÓN, cuando se formulan a las autoridades para que estas: Den a
+                                conocer
+                                cómo han actuado en un caso concreto; Permitan el acceso a los documentos públicos que
+                                tienen en
+                                su poder; Expidan copia de documentos que reposan en una oficina pública.</p>
+                            <p>CONSULTAS, cuando se presentan a las autoridades para que manifiesten su parecer sobre
+                                materias
+                                relacionadas con sus atribuciones.</p>
+
+                            <h3>¿Qué términos tienen las autoridades para dar respuesta a las peticiones?</h3>
+                            <p>Por regla general:</p>
+                            <p>• Quince (15) días para contestar quejas, reclamos y manifestaciones.</p>
+                            <p>• Diez (10) días para contestar peticiones de información.</p>
+                            <p>• Treinta (30) días para contestar consultas.</p>
+
+                            <p>Los anteriores plazos son los máximos, pues todo servidor público tiene el deber de
+                                actuar
+                                frente a las peticiones con celeridad y eficiencia.</p>
+
+                            <h3>¿Se puede desistir de las peticiones?</h3>
+                            <p>Sí. El solicitante puede desistir de las peticiones: en forma expresa, cuando el
+                                peticionario
+                                así lo manifieste y en forma tácita cuando, conforme a la ley, opere la presunción de
+                                desistimiento.</p>
+
+                            <p>No obstante lo anterior, las autoridades de oficio podrán continuar con la actuación, si
+                                la
+                                consideran necesaria para el interés público.</p>
+
+                            <h3>¿Se vulnera el derecho de petición con la ocurrencia del silencio administrativo?</h3>
+
+                            <p>Sí. De acuerdo con la jurisprudencia de la Corte Constitucional, la falta de resolución o
+                                la
+                                resolución tardía son formas de violación del derecho de petición, no obstante las
+                                consecuencias
+                                jurídicas del silencio administrativo.</p>
+
+                            <p>¿Qué consecuencias trae para las autoridades el retardo injustificado en la atención de
+                                peticiones?</p>
+
+                            <p>Ese retardo injustificado es motivo de sanción disciplinaria, pues incurren en causal de
+                                mala
+                                conducta los servidores públicos que sin razones válidas incumplen los términos para
+                                resolver o
+                                contestar una petición.</p>
+
+                            <p>¿Qué pueden hacer quienes ven amenazado o vulnerado su derecho de petición?</p>
+
+                            <p>Cuando, por acción u omisión de las autoridades o de los particulares que presten un
+                                servicio
+                                público o actúen o deban actuar en desarrollo de funciones públicas, vulneren o amenacen
+                                el
+                                derecho constitucional de petición, la persona afectada puede ejercer la acción de
+                                tutela
+                                para
+                                reclamar ante los jueces la protección inmediata de su derecho.</p>
+
+                            <h2 style="text-align: center">MODELO DERECHO DE PETICIÓN</h2>
+
+                            <h3>Formato Modelo para diligenciar un derecho de petición</h3>
+
+                            <p style="alignment: center">Ciudad y fecha. _________
+                            <p style="alignment: center">Señores: (Nombre y/o cargo de la autoridad o del particular que
+                                presta un servicio público o</p>
+                            <p style="alignment: center">desarrolla funciones públicas a quien se dirige la
+                                petición).__________________________</p>
+                            <p style="alignment: center">La Ciudad.</p>
+
+                            <p style="alignment: center">Referencia: Derecho de petición.</p>
+
+                            <p style="alignment: center">Respetados señores:</p>
+
+                            <p style="alignment: center">Con fundamento en 23 de la Constitución Política, el artículo
+                                13 y
+                                ss. del Código de
+                                Procedimiento Administrativo y de lo Contencioso Administrativo, la Ley 1775 de 2015 y
+                                demás
+                                normas concordantes y afines, me dirijo a ustedes para formular la siguiente petición
+                                (en
+                                interés general o particular: de queja, reclamo, información, manifestación o
+                                consulta):____________________________Para facilitar la resolución de lo solicitado
+                                estoy
+                                adjuntando los siguientes documentos: _______________________________ Recibiré
+                                correspondencia y
+                                notificaciones en: Dirección__________ Teléfono_________ Atentamente,______________</p>
+
+                            <p style="alignment: center">Nombre y apellido Cédula de ciudadanía
+                                No.___________________</p>
+                            <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                        </details>
+                    </li>
+                    <li>
+                        <a name="Corpus"/>
+                        <details open>
+                            <h1 style="text-align: center">HABEAS CORPUS</h1>
+                            <h3>¿Qué es el habeas corpus?</h3>
+
+                            <p>Es una acción pública que protege la libertad personal cuando alguien es capturado con
+                                violación de las garantías constitucionales o legales, o se prolongue ilegalmente la
+                                privación de su libertad.</p>
+
+                            <p>Es el derecho fundamental de toda persona que se considere ilegalmente privada de su
+                                libertad
+                                a reclamar de la autoridad judicial la protección de su derecho a mantenerse libre.</p>
+
+                            <p>El derecho de Habeas Corpus está reconocido en el artículo 30 de la carta Política.</p>
+
+                            <p>La acción del Habeas Corpus, es aquella acción pública que tiene por objeto la protección
+                                de
+                                la libertad personal de quien se encuentre capturado con violación de las garantías
+                                constitucionales o legales, o sea sometido a una prolongación ilegal de la privación de
+                                su
+                                libertad.</p>
+
+                            <p>La acción del Habeas Corpus se interpone ante cualquier funcionario judicial, sin
+                                embargo, el
+                                tramite corresponde exclusivamente al juez del lugar donde se cercano a éste. El Juez
+                                que no
+                                tramite o decida dentro del término legal una petición de Habeas Corpus u obstaculice su
+                                tramitación, será sancionado con arresto o privación de la libertad y con la pérdida del
+                                empleo.</p>
+
+                            <p>Las consecuencia que produce el otorgamiento del Habeas Corpus, se sustraen en que la
+                                persona
+                                afectada recupera su libertad, donde no podrá ser objeto de nuevas medidas restrictivas
+                                de
+                                la libertad cuyo fin sea impedir el restablecimiento de las garantías quebrantadas.</p>
+
+                            <p>Las personas responsables de la violación del derecho a la libertad deben ser
+                                investigadas
+                                disciplinaria y penalmente</p>
+
+                            <h3>¿Quién puede interponerlo?</h3>
+
+                            <p>El capturado, su abogado u otra persona.</p>
+
+                            <h3>¿Qué debe contener el escrito de habeas corpus?</h3>
+                            <p>• Fecha
+                            <p>• Funcionario judicial al que se dirige.</p>
+                            <p>• Nombre completo de la persona privada de la libertad.</p>
+                            <p>• Motivos por los que se considera la privación de la libertad como violatoria de la
+                                Constitución o la ley.</p>
+                            <p>• Fecha de reclusión y lugar donde se encuentra capturado.</p>
+                            <p>• Si es posible la identificación del funcionario que ordeno la captura y cargo que
+                                desempeña.</p>
+
+                            <p>Además bajo la gravedad del juramento que se considera prestado por la presentación de la
+                                petición deberá afirmarse que ningún otro juez ha asumido el conocimiento de la
+                                solicitud de
+                                habeas corpus o decidido sobre la misma.</p>
+
+                            <h3>¿Ante quién se interpone?</h3>
+
+                            <p>Ante cualquier juez o magistrado sin ser sometido a reparto, la decisión corresponde
+                                exclusivamente al juez penal.</p>
+
+                            <h3>¿Termino para resolver el habeas corpus?</h3>
+
+                            <p>Máximo 36 horas.</p>
+                            <p>Puede invocarse ante cualquier autoridad judicial competente.</p>
+                            <p>Debe ser resuelto en un término de 36 horas.</p>
+                            <p>No se suspenderá, incluso en Estados de Excepción</p>
+                            <p>En tres meses las solicitudes deben ser atendidas 24 horas al día, en días feriados y en
+                                épocas de vacancia judicial.</p>
+
+                            <h3>¿Cómo es la decisión del habeas corpus?</h3>
+
+                            <p>Demostrada la violación de las garantías constitucionales o legales, el juez
+                                inmediatamente
+                                ordenará la libertad de la persona capturada, por auto contra el cual no procede recurso
+                                alguno. Si se niega la decisión la decisión podrá ser impugnada.</p>
+
+                            <p>En ningún caso el trámite y la decisión sobre el habeas corpus pueden exceder de treinta
+                                y
+                                seis (36) horas.</p>
+
+                            <h3>Derechos de la persona capturada</h3>
+                            <p>• Ser informada de las razones de su detención.</p>
+                            <p>• Ser puesta a disposición del fiscal competente.</p>
+                            <p>• Hablar con un abogado.</p>
+                            <p>• Comunicar a sus familiares o amigos acerca de su situación.</p>
+                            <p>• Interponer el recurso de habeas corpus.</p>
+                            <p>• No ser incomunicado.</p>
+
+                            <h2 style="text-align: center">Formato de Habeas Corpus</h2>
+
+                            <p>Señor</p>
+                            <p>Juez (promiscuo municipal, penal municipal, penal del circuito o promiscuo del
+                                circuito)</p>
+                            <p>Ciudad</p>
+
+                            <p>Yo, _______________ en mi condición de (afectado, pariente, tercero o apoderado), acudo
+                                ante
+                                el señor juez a fin de solicitarle se sirva dar trámite a la petición de hábeas corpus
+                                en
+                                favor de ________________, con fundamento en lo siguiente:</p>
+
+                            <p>HECHOS</p>
+                            <p>(Si el hábeas corpus se invoca por privación ilegal de la libertad)</p>
+                            <p>• El señor__________________ fue aprehendido por______________</p>
+                            <p>(Referencia a la autoridad que realizo la acción) el pasado (fecha en lo posible exacta)
+                                ____________ por orden de(si se conoce la autoridad que ordeno la detención) Desde
+                                entonces
+                                hasta la fecha han transcurrido_______ días, sin que el mismo haya sido indagado o
+                                resulta
+                                su situación jurídica.</p>
+                            <p>• El señor___________________ se encuentra recluido en (si se conoce el sitio de
+                                reclusión)
+                                ___________________, a partir del día _____________ y el funcionario que ordeno su
+                                aprehensión es_____________ quien se desempeña como_____________ (si el habeas corpus se
+                                invoca por prolongación ilegal de la privación de libertad).</p>
+                            <p>• El señor ___________________ se encuentra recluido en ____________________, desde el
+                                día
+                                ________________ con fecha ___________________ se dicto auto que decreta su libertad,
+                                habiendo
+                                cumplido la pena requerida, pero hasta la fecha no ha sido liberado.</p>
+
+                            <p>JURAMENTO</p>
+                            <p>Bajo la gravedad del juramento, manifiesto que ningún otro funcionario conoce o ha
+                                decidido
+                                sobre esta acción.</p>
+
+                            <p>FUNDAMENTOS DE DERECHO</p>
+                            <p>Fundamento esta petición, señor juez, en los artículos 39 y 85 de la constitución
+                                política; y
+                                en
+                                la convención Americana sobre derechos humanos (articulo 6° y 7°).</p>
+
+                            <p>SOLICITUD</p>
+                            <p>Efectuada la verificación de la violación de las garantías constitucionales y legales,
+                                solicito a usted ordenar la libertad inmediata del señor __________________________ y
+                                compulsar
+                                copias para que se inicien las investigaciones a que hubiere lugar.</p>
+
+                            <p>Del señor juez, atentamente,</p>
+
+                            <p>_____________________________</p>
+                            <p>Nombres y apellidos del peticionario</p>
+                            <p>Cedula de ciudadanía</p>
+                            <p>Dirección:</p>
+                            <p>Teléfono:</p>
+
+                            <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                        </details>
+                    </li>
+                    <li>
+                        <a name="MecBusquedaUrgente"/>
+                        <details open>
+                            <h1 style="text-align: center">MECANISMO DE BÚSQUEDA URGENTE</h1>
+                            <h3>¿Qué es el Mecanismo de Búsqueda Urgente?</h3>
+
+                            <p>Es una herramienta Legal y Constitucional consagrada en la Ley 589 de 06 de julio de
+                                2000, en
+                                dicha ley claramente se consagra "Sin perjuicio' de la acción penal o terminación
+                                proceso
+                                por cualquier causa, en el delito de desaparición forzada de personas, el Estado tiene
+                                la
+                                obligación permanente de realizar las acciones necesarias tendientes a establecer el
+                                paradero de la víctima, conocer sobre las razone su desaparición e informar sobre ello a
+                                sus
+                                familiares".</p>
+                            <br>
+                            <p>La definición constitucional "claramente establece en su artículo 12 "Nadie será sometido
+                                a
+                                desaparición forzada, a torturas ni tratos crueles, inhumanos o degradantes ".La
+                                desaparición forzada de personas es legalmente considerada como un crimen internacional.
+                                En
+                                desarrollo de estas disposiciones constitucional y legal y por ser considerada la
+                                desaparición forzada de personas como un crimen internacional, se creó la Comisión
+                                nacional
+                                de Búsqueda Urgente de personas desaparecidas.</p>
+                            <br>
+                            <p>En tal sentido el MECANISMO DE BÚSQUEDA URGENTE, resulta ser el instrumento, que se ha
+                                establecido por la Subcomisión de Prevención de Discriminaciones y Protección de
+                                Minorías
+                                de la Organización de Naciones Unidas, en el "Conjunto de Principios para la Protección
+                                y
+                                la Promoción de los Derechos Humanos mediante la lucha contra la Impunidad", aprobado en
+                                el
+                                mes de agosto de 1997, que tanto la sociedad como las víctimas tienen el inalienable e
+                                imprescriptible DERECHO A SABER; derecho que es desarrollado en cuatro principios:</p>
+                            <p>1) El derecho inalienable a la verdad;</p>
+                            <p>2) El deber de recordar; ,''</p>
+                            <p>3) El derecho de las víctimas a saber;</p>
+                            <p>4) Garantías para hacer efectivo el derecho a saber. Este derecho a saber es desarrollado
+                                por
+                                el Principio 36, que consagra lo relativo al ámbito de aplicación del derecho a obtener
+                                reparación.</p>
+                            <br>
+                            <h2 style="text-align: center">MODELO MECANISMO DE BÚSQUEDA URGENTE</h2>
+                            <br>
+                            <p>Lugar y fecha _______________</p>
+
+                            <p>Señores</p>
+                            <p>Comisión Nacional de Búsqueda Urgente de Personas Desparecidas y/o Cualquier Autoridad
+                                Judicial. Ciudad</p>
+
+                            <p>Ref.: MECANISMO DE BÚSQUEDA URGENTE, DESAPARICIÓN FORZADA DEL SEÑOR (nombre de la
+                                víctima).</p>
+
+                            <p>Respetados señores: Cordial saludo:</p>
+
+                            <p>Por medio del presente escrito (el nombre de la organización con personería jurídica si
+                                la
+                                tiene y/o persona que solicita el Mecanismo), por medio del presente escrito me permito
+                                solicitar se active el MECANISMO DE BÚSQUEDA URGENTE, de acuerdo a lo que a continuación
+                                narro.</p>
+
+                            <p>Hechos a denunciar</p>
+
+                            <p>Datos importantes: El día _______ del mes ________ del año _______ fue desaparecido el
+                                señor,
+                                __ identificado con Cédula de Ciudadanía No. ___</p>
+                            <p>Expedida en ________, de _____ años de edad, oriundo de la comunidad de __________, del
+                                municipio __________, departamento _________________.</p>
+
+                            <p>Otros datos importantes: El señor __________ labora con (mencionar el trabajo o labor que
+                                desempeña el desaparecido) ___________ (mencionar los hechos en los que ocurrió de la
+                                desaparición).</p>
+
+                            <p>Datos personales: (Nombre de la víctima), es de (hacer descripción física, y de los
+                                elementos
+                                que portaba cuando desapareció, ropa etc.).</p>
+
+                            <p>Acciones realizadas: (indicar las gestiones realizadas para la Búsqueda y ante que
+                                autoridades se puso en conocimiento la desaparición).</p>
+
+                            <p>Deploro estos hechos y pido la inmediata liberación, el respeto por la vida e integridad
+                                del
+                                señor ___________ (nombre de la víctima), recuerda una vez más la grave situación que
+                                viven
+                                las comunidades en el departamento de __________, se refleja en la desaparición forzada
+                                del
+                                señor arriba mencionado.</p>
+
+                            <p>Fundamentos de la acción</p>
+
+                            <p>Acciones solicitadas</p>
+                            <p>Que por su intermedio se realicen todas las acciones humanitarias, URGENTEMENTE para la
+                                entrega con vida de/ señor _______ (Nombre de la víctima) ________, y solicitar a los
+                                captores que se respeten la vida, y lo devuelvan sano y salvo al seno de su familia y a
+                                la
+                                sociedad.</p>
+
+                            <p>Que por su intermedio se coordine el MECANISMO DE BÚSQUEDA URGENTE, con la participación
+                                de
+                                Secretaria del Interior, Organismos de seguridad del Estado, las Autoridades, Militares,
+                                policiales, Organismo de Control (Personería, Procuraduría y Defensoría) y C.I.C.R de la
+                                región.</p>
+
+                            <p>Dedicar todo el esfuerzo posible de las Autoridades en el País y Exigir a los captores
+                                respeten
+                                la vida e integridad personal del señor ________ (Nombre de la víctima), activando el
+                                MECANISMO
+                                DE BÚSQUEDA URGENTE para que prontamente sea devuelto.</p>
+
+                            <p>Agradecemos nos informe de las gestiones realizadas a la (di­rección)</p>
+
+                            <p>De usted,</p>
+
+                            <p>Atentamente,</p>
+                            <p>____________</p>
+                            <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                        </details>
+                    </li>
+                    <!--Generico
+                     <li>
+                         <a name=""/>
+                         <h1 style="text-align: center"> </h1>
+
+
+                         <a href="#Menu" style="text-align: center"><h3>REGRESAR AL MENÚ</h3></a>
+                         <hr>
+                     </li>
+                     -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+{% endblock %}
+
+{% block cierre %}
+    {{ parent() }}
+{% endblock %}
+{% block Copyright %}
+{{ parent() }}
+{% endblock %}

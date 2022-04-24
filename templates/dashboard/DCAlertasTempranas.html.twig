@@ -1,0 +1,175 @@
+{% extends 'base.html.twig' %}
+{% block head %}
+    <title>REDDHHFIC</title>
+    {{ parent() }}
+{% endblock %}
+{% block cabeza %}
+<body id="inner_page">
+{{ parent() }}
+{% endblock %}
+{% block cuerpo %}
+    {{ parent() }}
+    <!-- section -->
+    <section class="main_full inner_page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text_align_center">
+                    <div class="full heading_s1 center">
+                        <h2>Alertas Tempranas</h2>
+                    </div>
+                    <!--PRUEBA FILTROS-->
+                    <h1 style="text-align: center">FILTRO POR AÑO</h1>
+                    <p style="text-align: center">
+                        <a href="\DCAlertasTempranas/2000" style="border: solid">
+                            2000
+                        </a>
+                        <a href="\DCAlertasTempranas/2001" style="border: solid">
+                            2001
+                        </a>
+                        <a href="\DCAlertasTempranas/2002" style="border: solid">
+                            2002
+                        </a>
+                        <a href="\DCAlertasTempranas/2003" style="border: solid">
+                            2003
+                        </a>
+                        <a href="\DCAlertasTempranas/2004" style="border: solid">
+                            2004
+                        </a>
+                        <a href="\DCAlertasTempranas/2005" style="border: solid">
+                            2005
+                        </a>
+                        <a href="\DCAlertasTempranas/2006" style="border: solid">
+                            2006
+                        </a>
+                        <a href="\DCAlertasTempranas/2007" style="border: solid">
+                            2007
+                        </a>
+                        <a href="\DCAlertasTempranas/2008" style="border: solid">
+                            2008
+                        </a>
+                        <a href="\DCAlertasTempranas/2009" style="border: solid">
+                            2009
+                        </a>
+                        <a href="\DCAlertasTempranas/2010" style="border: solid">
+                            2010
+                        </a>
+                        <a href="\DCAlertasTempranas/2011" style="border: solid">
+                            2011
+                        </a>
+                        <a href="\DCAlertasTempranas/2012" style="border: solid">
+                            2012
+                        </a>
+                        <a href="\DCAlertasTempranas/2013" style="border: solid">
+                            2013
+                        </a>
+                        <a href="\DCAlertasTempranas/2014" style="border: solid">
+                            2014
+                        </a>
+                        <a href="\DCAlertasTempranas/2015" style="border: solid">
+                            2015
+                        </a>
+                        <a href="\DCAlertasTempranas/2016" style="border: solid">
+                            2016
+                        </a>
+                        <a href="\DCAlertasTempranas/2017" style="border: solid">
+                            2017
+                        </a>
+                        <a href="\DCAlertasTempranas/2018" style="border: solid">
+                            2018
+                        </a>
+                        <a href="\DCAlertasTempranas/2019" style="border: solid">
+                            2019
+                        </a>
+                        <a href="\DCAlertasTempranas/2020" style="border: solid">
+                            2020
+                        </a>
+                        <a href="\DCAlertasTempranas/2021" style="border: solid">
+                            2021
+                        </a>
+                        <a href="\DCAlertasTempranas/2022" style="border: solid">
+                            2022
+                        </a>
+                        <a href="\DCAlertasTempranas/2023" style="border: solid">
+                            2023
+                        </a>
+                        <a href="\DCAlertasTempranas/2024" style="border: solid">
+                            2024
+                        </a>
+                        <a href="\DCAlertasTempranas/2025" style="border: solid">
+                            2025
+                        </a>
+                        <a href="\DCAlertasTempranas/2026" style="border: solid">
+                            2026
+                        </a>
+                        <a href="\DCAlertasTempranas/2027" style="border: solid">
+                            2027
+                        </a>
+                        <a href="\DCAlertasTempranas/2028" style="border: solid">
+                            2028
+                        </a>
+                        <a href="\DCAlertasTempranas/2029" style="border: solid">
+                            2029
+                        </a>
+                        <a href="\DCAlertasTempranas/2030" style="border: solid">
+                            2030
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- section -->
+    <section class="layout_padding section" style="width: 82%">
+        <div class="container">
+            <div class="row">
+
+                {% for posts in posts %}
+                    <div class="col-md-4 text_align_center">
+                        <h3><a href="post/{{ posts.id }}/{{ posts.titulo }}">{{ posts.titulo }}</a></h3>
+                        <h6>{{ posts.fechapublicacion | date("d/m/Y") }}</h6>
+                        <p id="{{ posts.id }}" style="overflow-wrap: break-word; word-wrap: break-word;"></p>
+                        <button type="button" onclick="agregartxt{{ posts.id }}()">Ver Resumen</button>
+                        <a href="post/{{ posts.id }}/{{ posts.titulo }}">
+                            <button class="yellow_bt">Leer más</button>
+                        </a>
+                    </div>
+                {% endfor %}
+
+            </div>
+            <!--Paginación-->
+            <div class="row mx-0">
+                <div class="col-md-12 full center">
+                    {% if previous >=0 %}
+                        <button><a href="{{ path('DCAlertasTempranas',{ offset:previous}) }}" class="btn_pagging"><i
+                                        class="fa fa-long-arrow-left"></i>Anterior</a></button>
+                    {% endif %}
+                    {% if next < posts|length %}
+                        <button><a href="{{ path('DCAlertasTempranas',{ offset:next}) }}"
+                                   class="btn_pagging">Siguiente<i
+                                        class="fa fa-long-arrow-right"></i></a></button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+{% endblock %}
+
+{% block cierre %}
+    {{ parent() }}
+{% endblock %}
+{% block javascripts %}
+    {% for posts in posts %}
+        <script>
+            function agregartxt{{ posts.id }} () {
+                var texto = `{{ posts.contenido }}`;
+                let recortado = texto.slice(0, 1000) + "...";
+                var text = document.createTextNode(recortado);
+                document.getElementById("{{ posts.id }}").appendChild(text);
+            }
+        </script>
+    {% endfor %}
+    {{ parent() }}
+{% endblock %}
